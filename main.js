@@ -546,6 +546,7 @@
 
 // Voici des sujets qui vous permettront de réviser pour l'exam de la semaine prochaine.
 // Manipulation de tableaux en JavaScript - Sans les solutions
+
 // 1.
 // Somme des éléments d'un tableau
 // Écrivez une fonction qui prend un tableau de nombres en entrée et 
@@ -593,6 +594,11 @@
 // - une boucle `for` ;
 // - une méthode `concat`.
 // function fusionnerTableaux(tableau1, tableau2) {
+//     let arr = [];
+//     for (let i = 0; i < tableau1.length; i++) {
+//         for (let j = 0; j < tableau2.length; j++) {
+//         }
+//     }
 // }
 // const tableau1 = [1, 2, 3];
 // const tableau2 = [4, 5, 6];
@@ -607,6 +613,8 @@
 // - une boucle `for` ;
 // - une méthode `filter`.
 // function filtrerPairs(tableau) {
+//     let arr = [];
+
 // }
 // const tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // console.log(filtrerPairs(tableau)); // Output: [2, 4, 6, 8, 10]
