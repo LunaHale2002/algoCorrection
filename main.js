@@ -7,8 +7,6 @@
 // console.log(number(2)); // true
 // console.log(number("test")); // false
 
-const { loadConfigFromFile } = require("vite");
-
 
 // ## Exercice 2.
 // Écrivez une fonction qui prend un parametre qui vérifie si ce parametre est un booleen qui retourne vrai si 
@@ -84,12 +82,12 @@ const { loadConfigFromFile } = require("vite");
 // par des espaces.
 // Vous devez utiliser des boucles `for`.
 // function trouverPlusLongMot(mots) {
-//     let phrase = mots.split(' ');
+//     let phrase = mots.split(' ');    
 //     let motPlusLong = '';
 
-//     for (let mot of phrase) {
-//         if (mot.length > motPlusLong.length) {
-//             motPlusLong = mot;
+//     for (let i = 0; i < phrase.length; i++) {
+//         if (phrase[i].length > motPlusLong.length) {
+//             motPlusLong = phrase[i];
 //         }
 //     }
 //     return motPlusLong;
@@ -227,7 +225,6 @@ const { loadConfigFromFile } = require("vite");
 // (greetings(true));
 // (greetings(false));
 
-
 // Exercice 3
 // Écrivez une fonction `checkWord` qui prend un paramètre `word`.
 // Ce paramètre est une `string`.
@@ -242,7 +239,6 @@ const { loadConfigFromFile } = require("vite");
 // }
 // (checkWord("qw"));
 // (checkWord("pizza"));
-
 
 // Exercice 4
 // Écrivez une fonction `makeSum` qui prend deux paramètres `number1` et `number2`.
@@ -386,7 +382,7 @@ const { loadConfigFromFile } = require("vite");
 //     }
 //     return mergedArray;
 // }
-// mergeArray([1, 3, 2], [4, 1, 3, 2]); // [1, 3, 2, 4, 1, 3, 2]
+// console.log(mergeArray([1, 3, 2], [4, 1, 3, 2]) );// [1, 3, 2, 4, 1, 3, 2]
 
 
 // Exercice 12
@@ -546,3 +542,270 @@ const { loadConfigFromFile } = require("vite");
 //     return result;
 // }
 // console.log(repeatString("qsdf", 3)); // qsdfqsdfqsdf
+
+
+// Voici des sujets qui vous permettront de réviser pour l'exam de la semaine prochaine.
+// Manipulation de tableaux en JavaScript - Sans les solutions
+// 1.
+// Somme des éléments d'un tableau
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne la somme de tous les éléments du tableau.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `reduce`.
+// function sommeTableau(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 5];
+// console.log(sommeTableau(tableau)); // Output: 15
+
+
+
+// 2.
+// Plus grand élément d'un tableau
+// Écrivez une fonction qui trouve et 
+// retourne le plus grand élément dans un tableau de nombres.
+// Réalisez l'exercice avec :
+// - une boucle `for`.
+// function plusGrandElement(tableau) {
+// }
+// const tableau = [3, 7, 2, 9, 1];
+// console.log(plusGrandElement(tableau)); // Output: 9
+
+
+// 3. 
+// Inverser un tableau
+// Écrivez une fonction qui prend un tableau en entrée et 
+// renvoie un nouveau tableau avec les éléments inversés dans l'ordre.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `reverse`.
+// function inverserTableau(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 5];
+// console.log(inverserTableau(tableau)); // Output: [5, 4, 3, 2, 1]
+
+
+// 4. 
+// Fusionner deux tableaux
+// Écrivez une fonction qui prend deux tableaux en entrée et
+// renvoie un nouveau tableau contenant les éléments des deux tableaux d'origine.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `concat`.
+// function fusionnerTableaux(tableau1, tableau2) {
+// }
+// const tableau1 = [1, 2, 3];
+// const tableau2 = [4, 5, 6];
+// console.log(fusionnerTableaux(tableau1, tableau2)); // Output: [1, 2, 3, 4, 5, 6]
+
+
+// 5.
+// Filtrer les éléments d'un tableau
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// renvoie un nouveau tableau contenant uniquement les nombres pairs.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `filter`.
+// function filtrerPairs(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(filtrerPairs(tableau)); // Output: [2, 4, 6, 8, 10]
+
+
+// 6.
+// Filtrer les chaînes de caractères de longueur supérieure à 5
+// Écrivez une fonction qui prend un tableau de chaînes de caractères en entrée et 
+// renvoie un nouveau tableau contenant uniquement 
+// les chaînes de caractères de longueur supérieure à 5.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `filter`.
+// function filtrerLongueurSuperieureCinq(tableau) {
+// }
+// const tableau = ["chat", "chien", "éléphant", "souris", "girafe"];
+// console.log(filtrerLongueurSuperieureCinq(tableau)); // Output: ["éléphant", "souris", "girafe"]
+
+
+// 7.
+// Filtrer les éléments uniques
+// Écrivez une fonction qui prend un tableau en entrée et 
+// renvoie un nouveau tableau contenant uniquement 
+// les éléments uniques (qui n'apparaissent qu'une seule fois).
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `filter`.
+// function filtrerUniques(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 1, 2, 5];
+// console.log(filtrerUniques(tableau)); // Output: [1, 2, 3, 4, 5]
+
+
+// 8.
+// Filtrer les nombres premiers
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// renvoie un nouveau tableau contenant uniquement les nombres premiers.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `filter`
+// function filtrerPremiers(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(filtrerPremiers(tableau)); // Output: [2, 3, 5, 7]
+
+
+// 9.
+// Filtrer les éléments d'un type spécifique
+// Écrivez une fonction qui prend un tableau en entrée et 
+// un type de données spécifique (par exemple, "number", "string", "object") et 
+// renvoie un nouveau tableau contenant uniquement les éléments du type spécifié.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `filter`.
+// function filtrerParType(tableau, type) {
+// }
+// const tableau = [1, "chat", { nom: "Felix" }, 3.14, "chien", { nom: "Rex" }];
+// console.log(filtrerParType(tableau, "string")); // Output: ["chat", "chien"]
+
+
+// 10. 
+// Multiplier chaque élément par un nombre donné
+// Écrivez une fonction qui prend un tableau de nombres en entrée et un multiplicateur et 
+// retourne un nouveau tableau où chaque élément est multiplié par le multiplicateur.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `map`.
+// function multiplierPar(tableau, multiplicateur) {
+// }
+// const tableau = [1, 2, 3, 4, 5];
+// const multiplicateur = 2;
+// console.log(multiplierPar(tableau, multiplicateur)); // Output: [2, 4, 6, 8, 10]
+
+
+// 11.
+// Convertir chaque élément en chaîne de caractères
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne un nouveau tableau où chaque élément est converti en chaîne de caractères.
+// Réalisez l'exercice avec : 
+// - une boucle `for` ;
+// - une méthode `map`.
+// function convertirEnChaine(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 5];
+// console.log(convertirEnChaine(tableau)); // Output: ["1", "2", "3", "4", "5"]
+
+
+// 12. 
+// Extraire les prénoms d'une liste de personnes
+// Écrivez une fonction qui prend un tableau 
+// d'objets représentant des personnes (avec des propriétés "nom" et "prénom") et 
+// retourne un nouveau tableau contenant uniquement les prénoms.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `map`.
+// function extrairePrenoms(personnes) {
+// }
+// const personnes = [
+//     { nom: "Doe", prenom: "John" },
+//     { nom: "Smith", prenom: "Alice" },
+//     { nom: "Johnson", prenom: "Bob" }
+// ];
+// console.log(extrairePrenoms(personnes)); // Output: ["John", "Alice", "Bob"]
+
+
+// 13.
+// Calculer le carré de chaque nombre
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne un nouveau tableau où chaque nombre est élevé au carré.
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `map`;
+// function carre(tableau) {
+// }
+// const tableau = [1, 2, 3, 4, 5];
+// console.log(carre(tableau)); // Output: [1, 4, 9, 16, 25]
+
+
+// 14.
+// Formater une liste de noms
+// Écrivez une fonction qui prend un tableau de noms en entrée et 
+// retourne un nouveau tableau où chaque nom est en majuscules et précédé de "M.".
+// Réalisez l'exercice avec :
+// - une boucle `for` ;
+// - une méthode `map`.
+// function formaterNoms(tableau) {
+// }
+// const noms = ["Doe", "Smith", "Johnson"];
+// console.log(formaterNoms(noms)); // Output: ["M. DOE", "M. SMITH", "M. JOHNSON"]
+
+
+// 15.
+// Recherche du plus grand nombre dans un tableau
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne le plus grand nombre.
+// function plusGrandNombre(tableau) {
+// }
+// const tableau = [10, 20, 5, 30];
+// console.log(plusGrandNombre(tableau)); // Output: 30
+
+
+// 16. 
+// Calcul de la moyenne des nombres dans un tableau
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne la moyenne de ces nombres.
+// function moyenneTableau(tableau) {
+// }
+// const tableau = [10, 20, 30, 40, 50];
+// console.log(moyenneTableau(tableau)); // Output: 30
+
+
+// 17.
+// Vérification de la présence d'un nombre dans un tableau
+// Écrivez une fonction qui prend un tableau de nombres et un nombre spécifique en entrée, 
+// et retourne true si ce nombre est présent dans le tableau, sinon retourne false.
+// function nombrePresent(tableau, nombre) {
+// }
+// const tableau = [10, 20, 30, 40, 50];
+// console.log(nombrePresent(tableau, 30)); // Output: true
+// console.log(nombrePresent(tableau, 60)); // Output: false
+
+
+// 18.
+// Calcul de la médiane d'un tableau de nombres
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne la médiane de ces nombres.
+// function medianeTableau(tableau) {
+// }
+// const tableau = [10, 20, 30, 40, 50];
+// console.log(medianeTableau(tableau)); // Output: 30
+
+
+// 19.  
+// Tri d'un tableau de nombres par ordre croissant
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne un nouveau tableau contenant les mêmes nombres triés par ordre croissant.
+// function triCroissant(tableau) {
+// }
+// const tableau = [5, 2, 8, 1, 3];
+// console.log(triCroissant(tableau)); // Output: [1, 2, 3, 5, 8]
+
+
+// 20.
+// Calcul de la différence entre le plus grand et le plus petit nombre dans un tableau
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne la différence entre le plus grand et le plus petit nombre.
+// function differenceMaxMin(tableau) {
+// }
+// const tableau = [10, 5, 20, 8, 15];
+// console.log(differenceMaxMin(tableau)); // Output: 15
+
+
+// 21
+// Vérification de la séquence croissante dans un tableau de nombres
+// Écrivez une fonction qui prend un tableau de nombres en entrée et 
+// retourne true si les nombres sont dans une séquence croissante, sinon retourne false.
+// function sequenceCroissante(tableau) {
+// }
+// const tableau1 = [1, 2, 3, 4, 5];
+// const tableau2 = [1, 3, 2, 4, 5];
+// console.log(sequenceCroissante(tableau1)); // Output: true
+// console.log(sequenceCroissante(tableau2)); // Output: false
